@@ -15,6 +15,8 @@ footer,
 
 .nav {
   box-shadow: 0 2px 2px -2px $shadow-color;
+  background-color: #1a0800;
+  font-color: white;
   overflow: auto;
 
   &-container {
@@ -25,7 +27,8 @@ footer,
 
   &-title {
     @include transition(all .2s ease-out);
-    color: $default-color;
+    color: white;
+    font-size: 24px;
     display: inline-block;
     margin: 0;
     padding-right: .2rem;
@@ -61,7 +64,7 @@ footer,
   }
 
   a {
-    color: $default-color;
+    color: white;
     font-family: $sans-serif;
   }
 }

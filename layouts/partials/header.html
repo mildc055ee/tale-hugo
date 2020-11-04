@@ -1,8 +1,16 @@
-		<nav class="nav">
-			<div class="nav-container">
-				<a href="{{ "/" | relURL }}">
-					<h2 class="nav-title">{{ .Site.Title }}</h2>
-				</a>
-				{{ partial "header-menu.html" . }}
-			</div>
-		</nav>
+<header class="nav">
+    <div class="nav-container">
+        <a href="{{ "/" | relURL }}">
+            <p class="nav-title">{{ .Site.Title }}</p>
+        </a>
+        <ul>
+            {{ with .Site.Params.github }}
+            <li>
+                <a href="{{ . }}" aria-label="github">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</header>
