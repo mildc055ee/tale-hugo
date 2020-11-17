@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <main>
+    <h1>Posts</h1>
 	<section class="catalogue">
 		{{ range (.Paginate .Site.RegularPages).Pages }}
 			{{ .Render "summary" }}
