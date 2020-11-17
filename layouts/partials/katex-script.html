@@ -1,8 +1,8 @@
 <script defer>
-    (() => {
-        const tex = document.getElementsByClassName("tex");
-        Array.prototype.forEach.call(tex, (e) => {
-            katex.render(e.getAttribute("data-expr"), e);
-        })
-    })()
+(function() {
+  var tex = document.getElementsByClassName("tex");
+  Array.prototype.forEach.call(tex, function(el) {
+    katex.render(el.getAttribute("data-expr"), el);
+  });
+})();
 </script>
