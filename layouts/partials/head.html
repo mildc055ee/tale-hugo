@@ -27,7 +27,6 @@
         <!-- Katex -->
         {{- if or (.IsHome) (.Params.katex) }}
         {{ partial "katex-head.html" . }}
-        {{ partial "katex-script.html" . }}
         {{- end }}
 
 		<!-- Favicon -->
