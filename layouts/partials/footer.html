@@ -8,3 +8,6 @@
 			&copy; <time datetime="{{ now }}">{{ now.Format "2006" }}</time> {{ .Site.Author.name }}. 
 			</span>
 		</footer>
+        {{- if or (.IsHome) (.Params.katex) }}
+        {{ partial "katex-head.html" . }}
+        {{- end }}

@@ -24,10 +24,12 @@
 			<link rel="stylesheet" href="{{ . | relURL }}">
 		{{ end -}}
 
-        <!-- Katex -->
+        <!-- Katex
+        ## workarounding now
         {{- if or (.IsHome) (.Params.katex) }}
         {{ partial "katex-head.html" . }}
         {{- end }}
+        -->
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="32x32" href="{{ "images/favicon-32x32.png" | relURL }}">
