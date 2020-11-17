@@ -10,6 +10,7 @@
             <p class="catalogue-item-post-summary">
                 {{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary }}{{ end }}
             </p>
+            <p class="catalogue-item-post-summary-more">Read more...</p>
         </article>
     </a>
 </section>

@@ -41,6 +41,12 @@
 
       &-summary {
         font-size: 18px;
-      }
+        
+        &-more {
+            text-align: right;
+            font-style: italic;
+            font-color: $default-tint;
+        }  
+    }
   }
 }
