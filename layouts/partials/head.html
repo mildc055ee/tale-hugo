@@ -8,6 +8,7 @@
 		{{- end }}
 
 		<title>{{- if .IsHome }}{{ .Site.Title }}{{- else }}{{ .Title }} &middot; {{ .Site.Title }}{{- end }}</title>
+        {{- partial "ga.html" . -}}
 
 		<!-- CSS -->
 		{{- $inServerMode	:= .Site.IsServer }}
