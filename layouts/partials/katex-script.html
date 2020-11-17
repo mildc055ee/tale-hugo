@@ -1,9 +1,8 @@
 <script>
-    renderMathInElement(document.body,
-        {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "$", right: "$", display: false},
-                ]
+    (() => {
+        const tex = document.getElementsByClassName("tex");
+        Array.prototype.forEach.call(tex, (e) => {
+            katex.render(e.getAttribute("data-expr"), e);
         })
+    })()
 </script>
